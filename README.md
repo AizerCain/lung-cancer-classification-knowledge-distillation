@@ -87,11 +87,7 @@ The complete training and evaluation pipeline is illustrated below.
 ---
 
 ## 📈 Results
-
 The fine-tuned GhostNet student achieved 99% accuracy on the test set.
-
-### 🔹 Confusion Matrix
-![Confusion Matrix](results/confusion_matrix.png)
 
 ### 🔹 Classification Performance (Test Set)
 
