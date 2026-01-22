@@ -30,6 +30,9 @@ Accurate classification of lung cancer subtypes from histopathology images is cr
 
 ## 🧠 Model Architecture
 
+The system follows a teacher–student learning paradigm where a high-capacity
+EdgeNeXt model guides a lightweight GhostNet student using knowledge distillation.
+
 ![Teacher–Student Architecture](docs/architecture.svg)
 
 ### Teacher Model
@@ -69,6 +72,8 @@ https://www.kaggle.com/datasets/andrewmvd/lung-and-colon-cancer-histopathologica
 
 ## 🏗️ Project Pipeline
 
+The complete training and evaluation pipeline is illustrated below.
+
 ![Training Pipeline](docs/training_pipeline.svg)
 
 1. Dataset preprocessing and splitting  
@@ -82,6 +87,11 @@ https://www.kaggle.com/datasets/andrewmvd/lung-and-colon-cancer-histopathologica
 ---
 
 ## 📈 Results
+
+The fine-tuned GhostNet student achieved 99% accuracy on the test set.
+
+### 🔹 Confusion Matrix
+![Confusion Matrix](results/confusion_matrix.png)
 
 ### 🔹 Classification Performance (Test Set)
 
