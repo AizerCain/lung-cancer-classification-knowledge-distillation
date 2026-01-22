@@ -1,0 +1,39 @@
+<svg width="900" height="420" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .box { fill:#eef2f7; stroke:#333; stroke-width:1.5; }
+    .arrow { stroke:#333; stroke-width:2; marker-end:url(#arrowhead); }
+    text { font-family:Arial, sans-serif; font-size:14px; }
+    .title { font-size:20px; font-weight:bold; }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+      refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+
+  <text x="300" y="30" class="title">Teacher–Student Architecture</text>
+
+  <rect x="80" y="100" width="240" height="80" class="box"/>
+  <text x="120" y="135">Input Image</text>
+  <text x="95" y="155">(224 × 224 Histopathology)</text>
+
+  <rect x="380" y="60" width="260" height="90" class="box"/>
+  <text x="440" y="100">Teacher Network</text>
+  <text x="455" y="120">EdgeNeXt</text>
+
+  <rect x="380" y="200" width="260" height="90" class="box"/>
+  <text x="440" y="240">Student Network</text>
+  <text x="455" y="260">GhostNet</text>
+
+  <rect x="700" y="130" width="160" height="80" class="box"/>
+  <text x="720" y="165">Final Prediction</text>
+
+  <line x1="320" y1="140" x2="380" y2="105" class="arrow"/>
+  <line x1="320" y1="140" x2="380" y2="245" class="arrow"/>
+  <line x1="640" y1="245" x2="700" y2="170" class="arrow"/>
+
+  <text x="460" y="165">Knowledge Distillation</text>
+  <text x="435" y="185">(Soft Targets + Labels)</text>
+</svg>
