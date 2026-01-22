@@ -1,0 +1,49 @@
+<svg width="900" height="520" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .box { fill:#f5f7fa; stroke:#333; stroke-width:1.5; }
+    .arrow { stroke:#333; stroke-width:2; marker-end:url(#arrowhead); }
+    text { font-family:Arial, sans-serif; font-size:14px; }
+    .title { font-size:20px; font-weight:bold; }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+      refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+
+  <text x="260" y="30" class="title">Training Pipeline – Knowledge Distillation</text>
+
+  <rect x="60" y="70" width="220" height="60" class="box"/>
+  <text x="80" y="105">Histopathology Dataset</text>
+
+  <rect x="60" y="160" width="220" height="60" class="box"/>
+  <text x="85" y="195">Train / Val / Test Split</text>
+
+  <rect x="60" y="260" width="220" height="60" class="box"/>
+  <text x="85" y="295">DataLoader (GPU Optimized)</text>
+
+  <rect x="360" y="120" width="240" height="70" class="box"/>
+  <text x="405" y="155">Teacher Model</text>
+  <text x="410" y="175">(EdgeNeXt)</text>
+
+  <rect x="360" y="240" width="240" height="70" class="box"/>
+  <text x="395" y="275">Student Model</text>
+  <text x="405" y="295">(GhostNet)</text>
+
+  <rect x="650" y="180" width="200" height="70" class="box"/>
+  <text x="675" y="215">Knowledge Distillation</text>
+  <text x="700" y="235">(CE + KL Loss)</text>
+
+  <rect x="360" y="360" width="240" height="70" class="box"/>
+  <text x="405" y="395">Fine-Tuned Student</text>
+
+  <line x1="170" y1="130" x2="170" y2="160" class="arrow"/>
+  <line x1="170" y1="220" x2="170" y2="260" class="arrow"/>
+  <line x1="280" y1="290" x2="360" y2="275" class="arrow"/>
+  <line x1="280" y1="200" x2="360" y2="155" class="arrow"/>
+  <line x1="600" y1="155" x2="650" y2="215" class="arrow"/>
+  <line x1="600" y1="275" x2="650" y2="215" class="arrow"/>
+  <line x1="750" y1="250" x2="600" y2="360" class="arrow"/>
+</svg>
