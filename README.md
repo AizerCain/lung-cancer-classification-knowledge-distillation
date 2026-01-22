@@ -30,6 +30,8 @@ Accurate classification of lung cancer subtypes from histopathology images is cr
 
 ## 🧠 Model Architecture
 
+![Teacher–Student Architecture](docs/architecture.svg)
+
 ### Teacher Model
 - **EdgeNeXt-Small**
 - High-capacity CNN
@@ -66,6 +68,8 @@ https://www.kaggle.com/datasets/andrewmvd/lung-and-colon-cancer-histopathologica
 ---
 
 ## 🏗️ Project Pipeline
+
+![Training Pipeline](docs/training_pipeline.svg)
 
 1. Dataset preprocessing and splitting  
 2. GPU-optimized data loading  
