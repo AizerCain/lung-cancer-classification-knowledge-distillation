@@ -1,0 +1,51 @@
+# --------------------
+# Python cache
+# --------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --------------------
+# Virtual environments
+# --------------------
+env/
+venv/
+.venv/
+lung_kd/
+
+# --------------------
+# OS files
+# --------------------
+.DS_Store
+Thumbs.db
+
+# --------------------
+# IDE settings
+# --------------------
+.vscode/
+.idea/
+
+# --------------------
+# Model checkpoints (IMPORTANT)
+# --------------------
+*.pth
+*.pt
+
+# --------------------
+# Logs & outputs
+# --------------------
+*.log
+*.out
+
+# --------------------
+# Dataset (DO NOT UPLOAD DATA)
+# --------------------
+data/
+dataset/
+dataset_split/
+
+# --------------------
+# Notebooks checkpoints
+# --------------------
+.ipynb_checkpoints/
